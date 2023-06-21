@@ -1,0 +1,51 @@
+body{
+  background-color: black;
+}
+
+.top-container {
+  /* existing styles... */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center; /* add this property */
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(10vh - 120px); /* subtract the height of the top container and its margins */
+  margin-top: 10px;
+}
+
+h4, h5, p {
+  margin-top: 10px; /* add this property to create some space between the two headers */
+  font-size: larger;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+h1 {
+  margin-top: 10px; /* add this property to create some space between the two headers */
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: larger;
+}
+
+input[name="videoID"], #convert-btn {
+  font-size: 20px;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+}
